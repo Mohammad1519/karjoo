@@ -1,72 +1,93 @@
-import DashboardPage from "views/Dashboard/Dashboard.jsx";
-import UserProfile from "views/UserProfile/UserProfile.jsx";
-import TableList from "views/TableList/TableList.jsx";
-import Typography from "views/Typography/Typography.jsx";
-import Icons from "views/Icons/Icons.jsx";
-import Maps from "views/Maps/Maps.jsx";
-import NotificationsPage from "views/Notifications/Notifications.jsx";
-
-import {
-  Dashboard,
-  Person,
-  ContentPaste,
-  LibraryBooks,
-  BubbleChart,
-  LocationOn,
-  Notifications
-} from "@material-ui/icons";
+import DashboardPage from 'views/Dashboard/Dashboard.jsx';
+import { Dashboard, Person, TableChart } from '@material-ui/icons';
+import ContractsManagement from '../views/ContractsManagement/ContractsManagement';
+import Logout from '../views/Logout/Logout';
+import CertificatesManagement from '../views/CertificatesManagement/CertificatesManagement';
+import EmployersManagement from '../views/EmployersManagement/EmployersManagement';
+import JobSeekersManagement from '../views/JobSeekersManagement/JobSeekersManagement';
+import RegisterManagement from '../views/RegisterManagement/RegisterManagement';
+import Test from '../views/Test/Test';
 
 const dashboardRoutes = [
-  {
-    path: "/dashboard",
-    sidebarName: "Dashboard",
-    navbarName: "Material Dashboard",
-    icon: Dashboard,
-    component: DashboardPage
-  },
-  {
-    path: "/user",
-    sidebarName: "User Profile",
-    navbarName: "Profile",
-    icon: Person,
-    component: UserProfile
-  },
-  {
-    path: "/table",
-    sidebarName: "Table List",
-    navbarName: "Table List",
-    icon: ContentPaste,
-    component: TableList
-  },
-  {
-    path: "/typography",
-    sidebarName: "Typography",
-    navbarName: "Typography",
-    icon: LibraryBooks,
-    component: Typography
-  },
-  {
-    path: "/icons",
-    sidebarName: "Icons",
-    navbarName: "Icons",
-    icon: BubbleChart,
-    component: Icons
-  },
-  {
-    path: "/maps",
-    sidebarName: "Maps",
-    navbarName: "Map",
-    icon: LocationOn,
-    component: Maps
-  },
-  {
-    path: "/notifications",
-    sidebarName: "Notifications",
-    navbarName: "Notifications",
-    icon: Notifications,
-    component: NotificationsPage
-  },
-  { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
+	{
+		path: '/dashboard',
+		sidebarName: 'داشبورد',
+		navbarName: 'داشبورد',
+		icon: Dashboard,
+		component: DashboardPage,
+	},
+	{
+		path: '/registerManagement',
+		sidebarName: 'مدیریت ثبت نام های اولیه',
+		navbarName: 'مدیریت ثبت نام های اولیه',
+		icon: TableChart,
+		component: RegisterManagement,
+	},
+	{
+		path: '/jobSeekersManagement',
+		sidebarName: 'مدیریت کارجویان',
+		navbarName: 'مدیریت کارجویان',
+		icon: TableChart,
+		component: JobSeekersManagement,
+	},
+	{
+		path: '/employersManagement',
+		sidebarName: 'مدیریت کار فرمایان',
+		navbarName: 'مدیریت کار فرمایان',
+		icon: TableChart,
+		component: EmployersManagement,
+	},
+	{
+		path: '/contractsManagement',
+		sidebarName: 'مدیریت قرارداد ها',
+		navbarName: 'مدیریت قرارداد ها',
+		icon: TableChart,
+		component: ContractsManagement,
+	},
+	{
+		path: '/certificatesManagement',
+		sidebarName: 'مدیریت گواهینامه ها',
+		navbarName: 'مدیریت گواهینامه ها',
+		icon: TableChart,
+		component: CertificatesManagement,
+	},
+
+	{
+		path: '/logout',
+		sidebarName: 'خروج',
+		navbarName: 'خروج',
+		icon: TableChart,
+		component: Logout,
+	},
+	// {
+	//   path: "/typography",
+	//   sidebarName: "Typography",
+	//   navbarName: "Typography",
+	//   icon: LibraryBooks,
+	//   component: Typography
+	// },
+	// {
+	//   path: "/icons",
+	//   sidebarName: "Icons",
+	//   navbarName: "Icons",
+	//   icon: BubbleChart,
+	//   component: Icons
+	// },
+	// {
+	//   path: "/maps",
+	//   sidebarName: "Maps",
+	//   navbarName: "Map",
+	//   icon: LocationOn,
+	//   component: Maps
+	// },
+	// {
+	//   path: "/notifications",
+	//   sidebarName: "Notifications",
+	//   navbarName: "Notifications",
+	//   icon: Notifications,
+	//   component: NotificationsPage
+	// },
+	{ redirect: true, path: '/', to: '/dashboard', navbarName: 'Redirect' },
 ];
 
 export default dashboardRoutes;

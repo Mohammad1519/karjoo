@@ -21,7 +21,7 @@ import dashboardRoutes from "routes/dashboard.jsx";
 import appStyle from "assets/jss/material-dashboard-react/appStyle.jsx";
 
 import image from "assets/img/sidebar-2.jpg";
-import logo from "assets/img/reactlogo.png";
+import logo from "assets/img/Iran_TVTO.png";
 
 // create custom theme configuration
 const theme = createMuiTheme({
@@ -73,13 +73,14 @@ class App extends React.Component {
           <div className={classes.wrapper}>
             <Sidebar
               routes={dashboardRoutes}
-              logoText={"Creative Tim"}
+              logoText={"پنل مدیریت سامانه کارجو"}
               logo={logo}
               image={image}
               handleDrawerToggle={this.handleDrawerToggle}
               open={this.state.mobileOpen}
-              color="blue"
+              color="orange"
               {...rest}
+            
             />
             <div className={classes.mainPanel} ref="mainPanel">
               <Header
