@@ -28,7 +28,7 @@ class JobSeekersManagement extends React.Component {
 				<ItemGrid xs={12} sm={12} md={12}>
 					<RegularCard
 						cardTitle="جدول کارجویان "
-						cardSubtitle="لیست کارجویان "
+						cardSubtitle="لیست کلیه کارجویان "
 						content={<DataTable columns={this.state.columns} data={this.state.data} />}
 					/>
 				</ItemGrid>

@@ -27,8 +27,8 @@ class EmployersManagement extends React.Component {
 			<Grid container>
 				<ItemGrid xs={12} sm={12} md={12}>
 					<RegularCard
-						cardTitle="Simple Table"
-						cardSubtitle="Here is a subtitle for this table"
+						cardTitle="جدول کارفرمایان"
+						cardSubtitle="لیست کلیه کارفرمایان"
 						content={<DataTable columns={this.state.columns} data={this.state.data} />}
 					/>
 				</ItemGrid>

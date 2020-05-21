@@ -6,7 +6,6 @@ import CertificatesManagement from '../views/CertificatesManagement/Certificates
 import EmployersManagement from '../views/EmployersManagement/EmployersManagement';
 import JobSeekersManagement from '../views/JobSeekersManagement/JobSeekersManagement';
 import RegisterManagement from '../views/RegisterManagement/RegisterManagement';
-import Test from '../views/Test/Test';
 
 const dashboardRoutes = [
 	{
